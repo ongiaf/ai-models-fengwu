@@ -46,16 +46,13 @@ setuptools.setup(
     install_requires=[
         "ai-models",
         "onnx",
-        "onnxruntime",
-        "torch",
-        "onnx2torch"
+        "onnxruntime-gpu",
     ],
     zip_safe=True,
     keywords="tool",
     entry_points={
         "ai_models.model": [
             "fengwu = ai_models_debug.model:FengWu",
-            "fengwuv2 = ai_models_debug.model:FengWuV2",
         ]
     },
     classifiers=[
